@@ -672,8 +672,8 @@ section {
 
 /* --- Footer --- */
 footer {
-   background: #111;
-   color: #aaa;
+   background: var(--primary);
+   color: var(--light);
    text-align: center;
    padding: 15px 10px;
    font-size: 0.9rem;
@@ -681,8 +681,23 @@ footer {
 }
 
 footer strong {
-   color: #fff;
+   color: var(--light);
 }
+
+.footer-link-ikhlaq {
+   color: var(--secondary);
+   text-decoration: underline;
+   transition: all 0.3s ease;
+   font-weight: 600;
+   text-decoration-color: var(--secondary);
+}
+
+.footer-link-ikhlaq:hover {
+   color: var(--primary);
+   text-decoration: underline;
+   text-decoration-color: var(--primary);
+}
+
 
 /* --- Responsive --- */
 @media (max-width: 600px) {
