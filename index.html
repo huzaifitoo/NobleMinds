@@ -1,119 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noble Minds Institute</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Noble Minds Institute - Where Learning Meets Excellence</title>
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav>
+         <div class="nav-container">
+            <a href="#home" class="logo">
+               <img
+                  src="images/logo.png"
+                  alt="Noble Minds Institute Logo"
+                  class="logo-icon"
+               />
+               <div class="logo-text-container">
+                  <h2 class="logo-text-primary">Noble Minds</h2>
+                  <h3 class="logo-text-secondary">Institute</h2>
+               </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#details">Details</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#team">Our Team</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+         </div>
+      </nav>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="logopng.png" alt="Logo">
-        <span>Noble Minds Institute</span>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+         <div class="hero-split-container">
+            <div class="hero-content-side">
+               <div class="hero-subtitle">Welcome to Noble Minds Institute</div>
+               <h1>Where Learning Meets Excellence</h1>
+               <p class="hero-description">
+                  Empowering young minds to achieve their full potential in a
+                  nurturing and innovative educational environment at Balsoo
+                  Yaripora, Kulgam.
+               </p>
+               <div class="hero-buttons">
+                  <a href="#details" class="btn btn-primary"
+                     >Explore Programs →</a
+                  >
+                  <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+               </div>
+            </div>
+            <div class="hero-image-side">
+               <img
+                  class="hero-image-placeholder"
+                  src="images/img_school_view_3.jpeg"
+                  alt="School View 3"
+                  height="100%"
+                  width="100%"
+                  object-fit="cover"
+               />
+            </div>
+         </div>
+      </section>
+
+      <div class="info-container">
+         <!-- Admissions Open -->
+         <div class="info-box">
+            <div class="info-text">
+               <h2>Admissions Open</h2>
+               <div class="info-divider"></div>
+               <p>
+                  Join <b>Noble Minds Institute</b> – where learning inspires
+                  confidence, creativity, and success.
+               </p>
+            </div>
+            <a href="https://wa.me/+918825021868" target="_blank">
+               <button class="info-btn">REGISTER NOW</button>
+            </a>
+         </div>
+
+         <!-- We’re Hiring -->
+         <div class="info-box">
+            <div class="info-text">
+               <h2>We’re Hiring!</h2>
+               <div class="info-divider"></div>
+               <p>
+                  Be part of <b>our dynamic team</b> – where innovation meets
+                  opportunity. Explore new roles and help us shape the future
+                  together.
+               </p>
+            </div>
+            <a href="https://wa.me/+918825021868" target="_blank">
+               <button class="info-btn">GET IN TOUCH</button>
+            </a>
+         </div>
       </div>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#details">Details</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#team">Our Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <!-- Image Carousel -->
+      <section class="carousel-section">
+         <div class="carousel-container">
+            <div class="carousel-wrapper">
+               <div class="carousel-slide active">
+                  <img
+                     src="images/img_school_view_1.jpeg"
+                     alt="School View 1"
+                  />
+               </div>
+               <div class="carousel-slide">
+                  <img
+                     src="images/img_school_view_2.jpeg"
+                     alt="School View 2"
+                  />
+               </div>
+               <div class="carousel-slide">
+                  <img
+                     src="images/img_school_view_3.jpeg"
+                     alt="School View 3"
+                  />
+               </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+            <div class="carousel-dots">
+               <span class="dot active" onclick="currentSlide(0)"></span>
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+         </div>
+      </section>
 
-      <div class="menu-icon" id="menuIcon">☰</div>
-    </nav>
-  </header>
+      <!-- Details Section -->
+      <section id="details">
+         <div class="container">
+            <div class="section-header">
+               <div class="section-subtitle">Why Choose Us</div>
+               <h2 class="section-title">Why Choose Noble Minds Institute?</h2>
+               <p class="section-description">
+                  At Noble Minds Institute, we ignite a lifelong love for
+                  learning by providing a nurturing environment where every
+                  child matters. Our mission is to build a strong educational
+                  foundation while guiding each student to discover their
+                  individual strengths and potential.
+               </p>
+            </div>
+            <div class="card-grid">
+               <div class="card">
+                  <div class="card-icon">👨‍🏫</div>
+                  <h3>Expert, Caring Educators</h3>
+                  <p>
+                     Our dedicated teachers give every student personal
+                     attention, fostering confidence and curiosity.
+                  </p>
+               </div>
+               <div class="card">
+                  <div class="card-icon">🏫</div>
+                  <h3>Safe and Supportive Campus</h3>
+                  <p>
+                     A secure, vibrant campus ensures learners grow and explore
+                     in a positive, worry-free environment.
+                  </p>
+               </div>
+               <div class="card">
+                  <div class="card-icon">🌱</div>
+                  <h3>Holistic Development</h3>
+                  <p>
+                     We go beyond academics, focusing on values, teamwork,
+                     creativity, and communication skills.
+                  </p>
+               </div>
+               <div class="card">
+                  <div class="card-icon">💡</div>
+                  <h3>Innovative Curriculum</h3>
+                  <p>
+                     Integrating technology and real-world learning for a
+                     well-rounded education.
+                  </p>
+               </div>
+               <div class="card">
+                  <div class="card-icon">👪</div>
+                  <h3>Strong Parent Engagement</h3>
+                  <p>
+                     Regular updates, workshops, and events strengthen
+                     school-family bonds.
+                  </p>
+               </div>
+               <div class="card">
+                  <div class="card-icon">🤝</div>
+                  <h3>Vibrant Community</h3>
+                  <p>
+                     A welcoming community where every child feels valued and
+                     inspired.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
 
-  <!-- Slider -->
-  <section class="slider" id="home">
-    <div class="slides">
-      <img src="image1.jpeg" alt="School 1">
-      <img src="image2.jpeg" alt="School 2">
-      <img src="image3.jpeg" alt="School 3">
-      <img src="image4.jpeg" alt="School 4">
-      <img src="image5.jpeg" alt="School 5">
-      <img src="image6.jpeg" alt="School 6">
-    </div>
-    <div class="overlay">
-      <h1>Welcome to Noble Minds Institute</h1>
-      <p>Where learning meets excellence 🌟</p>
-    </div>
-  </section>
+      <!-- About Section -->
+      <section id="about">
+         <div class="container">
+            <div class="section-header">
+               <div class="section-subtitle">Our Story</div>
+               <h2 class="section-title">About Us</h2>
+            </div>
+            <div class="about-card">
+               <p>
+                  Noble Minds Institute Balsoo Yaripora is a leading primary
+                  school providing high-quality education in a caring and safe
+                  environment. We blend modern teaching with timeless values of
+                  respect, curiosity, and integrity. Our curriculum ensures
+                  holistic development — academics, creativity, sports, and life
+                  skills. Every child is encouraged to explore, inquire, and
+                  grow with confidence. Together with parents, we build a strong
+                  foundation for bright, confident, and kind future citizens.
+               </p>
+            </div>
+         </div>
+      </section>
 
-  <!-- Details -->
-  <section id="details" class="details">
-    <h2>Why Choose Noble Minds Institute Balsoo Yaripora?</h2>
-    <p>
-      At Noble Minds Institute, we ignite a lifelong love for learning by providing a nurturing environment where every child matters. 
-      Our mission is to build a strong educational foundation while guiding each student to discover their individual strengths and potential.
-      <br><br>
-      <b>Expert, Caring Educators:</b> Our dedicated teachers give every student personal attention, fostering confidence and curiosity. 
-      <br><br>
-      <b>Safe and Supportive Campus:</b> A secure, vibrant campus ensures learners grow and explore in a positive, worry-free environment.
-      <br><br>
-      <b>Holistic Development:</b> We go beyond academics, focusing on values, teamwork, creativity, and communication skills.
-      <br><br>
-      <b>Innovative Curriculum:</b> Integrating technology and real-world learning for a well-rounded education.
-      <br><br>
-      <b>Strong Parent Engagement:</b> Regular updates, workshops, and events strengthen school-family bonds.
-      <br><br>
-      <b>Vibrant Community:</b> A welcoming community where every child feels valued and inspired.
-    </p>
-  </section>
+      <!-- Team Section -->
+      <section id="team">
+         <div class="container">
+            <div class="section-header">
+               <div class="section-subtitle">Meet Our Team</div>
+               <h2 class="section-title">Our Team</h2>
+               <p class="section-description">
+                  At Noble Minds Institute Balsoo Yaripora, our strength lies in
+                  our dedicated team of educators and staff who work together to
+                  create a joyful, safe, and inspiring learning environment for
+                  every child.
+               </p>
+            </div>
+            <div class="card-grid">
+               <div class="card">
+                  <div class="card-icon">👩‍🏫</div>
+                  <h3>Experienced Educators</h3>
+                  <p>
+                     Our teachers bring experience, enthusiasm, and creativity
+                     to each classroom. Using engaging and modern teaching
+                     methods, they make learning interactive and meaningful.
+                  </p>
+               </div>
+               <div class="card">
+                  <div class="card-icon">🎯</div>
+                  <h3>Leadership and Vision</h3>
+                  <p>
+                     Guided by an inspiring leadership team, Noble Minds
+                     Institute continues to grow as a model of excellence in
+                     primary education.
+                  </p>
+               </div>
+               <div class="card">
+                  <div class="card-icon">💼</div>
+                  <h3>Dedicated Support Staff</h3>
+                  <p>
+                     Behind every successful learning experience is a team of
+                     caring and dependable support staff.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      Noble Minds Institute Balsoo Yaripora is a leading primary school providing high-quality education in a caring and safe environment.
-      We blend modern teaching with timeless values of respect, curiosity, and integrity.
-      <br><br>
-      Our curriculum ensures holistic development — academics, creativity, sports, and life skills. 
-      Every child is encouraged to explore, inquire, and grow with confidence. Together with parents, 
-      we build a strong foundation for bright, confident, and kind future citizens.
-    </p>
-  </section>
+      <!-- Contact Section -->
+      <section id="contact">
+         <div class="contact-container">
+            <div class="contact-header">
+               <p class="subtitle">Get In Touch</p>
+               <h2>Contact Us</h2>
+               <p class="description">
+                  We'd love to hear from you. Reach out to us for admissions,
+                  inquiries, or any questions.
+               </p>
+            </div>
 
-  <!-- Team -->
-    <!-- Our Team -->
-  <section id="team" class="team">
-    <h2>Our Team</h2>
-    <p>
-      At Noble Minds Institute Balsoo Yaripora, our strength lies in our dedicated team of educators and staff who work together to create a joyful, safe, and inspiring learning environment for every child. Committed, compassionate, and passionate about education, our team forms the heart of our school community.
-      <br><br>
-      <strong>Experienced Educators:</strong> Our teachers bring experience, enthusiasm, and creativity to each classroom. Using engaging and modern teaching methods, they make learning interactive and meaningful...
-      <br><br>
-      <strong>Leadership and Vision:</strong> Guided by an inspiring leadership team, Noble Minds Institute continues to grow as a model of excellence in primary education...
-      <br><br>
-      <strong>Dedicated Support Staff:</strong> Behind every successful learning experience is a team of caring and dependable support staff...
-      <br><br>
-      Together, our entire team cultivates an atmosphere where knowledge flourishes, creativity is celebrated, and every child feels respected, valued, and inspired to achieve their best.
-    </p>
-  </section>
+            <div class="contact-grid">
+               <div class="contact-item">
+                  <b>📍</b>
+                  <p>Balsoo Yaripora, Kulgam, Kashmir</p>
+               </div>
+               <div class="contact-item">
+                  <b>📞</b>
+                  <a href="tel:+918825021868" target="_blank" class="contact-item-text">
+                     +91 8825021868
+                  </a>
+               </div>
+               <div class="contact-item">
+                  <b>✉️</b>
+                  <a href="mailto:info@nobleminds.edu.in" target="_blank" class="contact-item-text">
+                     info@nobleminds.edu.in
+                  </a>
+               </div>
+            </div>
 
+            <div class="social-section">
+               <p class="follow-text">Follow Us</p>
+               <div class="social-links">
+                  <a
+                     href="https://www.instagram.com/noble_minds_institute"
+                     target="_blank"
+                     ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24px"
+                        viewBox="0 0 26 24"
+                        fill="none"
+                        class="social-icon"
+                     >
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M17.3194 2H8.43056C5.36231 2 2.875 4.48731 2.875 7.55556V16.4444C2.875 19.5127 5.36231 22 8.43056 22H17.3194C20.3876 22 22.875 19.5127 22.875 16.4444V7.55556C22.875 4.48731 20.3876 2 17.3194 2ZM20.9305 16.4444C20.9244 18.4362 19.3112 20.0494 17.3194 20.0556H8.43056C6.43873 20.0494 4.82555 18.4362 4.81945 16.4444V7.55556C4.82555 5.56372 6.43873 3.95054 8.43056 3.94444H17.3194C19.3112 3.95054 20.9244 5.56372 20.9305 7.55556V16.4444ZM18.1527 7.83333C18.7664 7.83333 19.2638 7.33587 19.2638 6.72222C19.2638 6.10858 18.7664 5.61111 18.1527 5.61111C17.5391 5.61111 17.0416 6.10858 17.0416 6.72222C17.0416 7.33587 17.5391 7.83333 18.1527 7.83333ZM12.875 7C10.1136 7 7.875 9.23858 7.875 12C7.875 14.7614 10.1136 17 12.875 17C15.6364 17 17.875 14.7614 17.875 12C17.878 10.673 17.3521 9.39952 16.4137 8.4612C15.4754 7.52288 14.202 6.99704 12.875 7ZM9.81945 12C9.81945 13.6876 11.1874 15.0556 12.875 15.0556C14.5625 15.0556 15.9305 13.6876 15.9305 12C15.9305 10.3124 14.5625 8.94444 12.875 8.94444C11.1874 8.94444 9.81945 10.3124 9.81945 12Z"
+                           fill="currentColor"
+                           class="path-3"
+                        ></path></svg
+                  ></a>
+                  <a
+                     href="https://www.facebook.com/people/Noble-Minds-Institute/61583069974702/"
+                     target="_blank"
+                     ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16px"
+                        viewBox="0 0 15 24"
+                        fill="none"
+                        class="social-icon"
+                     >
+                        <path
+                           d="M11.7556 5.33333H8.42217C7.8085 5.33333 7.31106 5.8308 7.31106 6.44444V9.77778H11.7556C11.8819 9.77498 12.0018 9.83378 12.0769 9.93544C12.152 10.0371 12.1731 10.1689 12.1333 10.2889L11.3111 12.7333C11.2353 12.9577 11.0256 13.1093 10.7888 13.1111H7.31106V21.4444C7.31106 21.7512 7.06228 22 6.7555 22H3.97773C3.67091 22 3.42217 21.7512 3.42217 21.4444V13.1111H1.75551C1.44868 13.1111 1.19995 12.8623 1.19995 12.5556V10.3333C1.19995 10.0266 1.44868 9.77778 1.75551 9.77778H3.42217V6.44444C3.42217 3.98984 5.41206 2 7.86662 2H11.7556C12.0623 2 12.3111 2.24873 12.3111 2.55556V4.77778C12.3111 5.0846 12.0623 5.33333 11.7556 5.33333Z"
+                           fill="currentColor"
+                           class="path-2"
+                        ></path></svg
+                  ></a>
+                  <!-- <a href="#" target="_blank"
+                     ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24px"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        class="linkedin"
+                     >
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M4.82232 2H20.3779C21.6052 2 22.6001 2.99492 22.6001 4.22222V19.7778C22.6001 21.0051 21.6052 22 20.3779 22H4.82232C3.59502 22 2.6001 21.0051 2.6001 19.7778V4.22222C2.6001 2.99492 3.59502 2 4.82232 2ZM8.15566 18.6667C8.46248 18.6667 8.71121 18.4179 8.71121 18.1111V10.3333C8.71121 10.0266 8.46248 9.77778 8.15566 9.77778H6.48899C6.18217 9.77778 5.93343 10.0266 5.93343 10.3333V18.1111C5.93343 18.4179 6.18217 18.6667 6.48899 18.6667H8.15566ZM7.32232 8.66667C6.40184 8.66667 5.65566 7.92048 5.65566 7C5.65566 6.07952 6.40184 5.33333 7.32232 5.33333C8.2428 5.33333 8.98899 6.07952 8.98899 7C8.98899 7.92048 8.2428 8.66667 7.32232 8.66667ZM18.7112 18.6667C19.018 18.6667 19.2668 18.4179 19.2668 18.1111V13C19.3029 11.2342 17.9974 9.72724 16.2445 9.51111C15.019 9.39917 13.8315 9.97156 13.1557 11V10.3333C13.1557 10.0266 12.9069 9.77778 12.6001 9.77778H10.9334C10.6267 9.77778 10.3779 10.0266 10.3779 10.3333V18.1111C10.3779 18.4179 10.6267 18.6667 10.9334 18.6667H12.6001C12.9069 18.6667 13.1557 18.4179 13.1557 18.1111V13.9444C13.1557 13.024 13.9019 12.2778 14.8223 12.2778C15.7428 12.2778 16.489 13.024 16.489 13.9444V18.1111C16.489 18.4179 16.7378 18.6667 17.0445 18.6667H18.7112Z"
+                           fill="currentColor"
+                           class="path"
+                        ></path></svg
+                  ></a> -->
+                  <a href="https://wa.me/+918825021868" target="_blank">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 32 32"
+                        version="1.1"
+                     >
+                        <title>whatsapp</title>
+                        <path
+                           d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"
+                        />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
 
-  <!-- Footer -->
-  <footer id="contact">
-    <div class="footer-container">
-      <div>
-        <h3>Contact Us</h3>
-        <p>📍 Balsoo Yaripora, Kulgam, Kashmir</p>
-        <p>📞 +91 8825021868</p>
-      </div>
-      <div>
-        <h3>Follow Us</h3>
-        <p>🌐 Facebook | Instagram | YouTube</p>
-      </div>
-    </div>
-    <p class="copyright">
-      © 2025 Noble Minds Institute | All Rights Reserved
-    </p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+      <!-- Footer -->
+      <footer>
+         <p>
+            &copy; 2025 <strong>Noble Minds Institute</strong> — All Rights
+            Reserved
+         </p>
+      </footer>
+      <script src="js/script.js"></script>
+   </body>
 </html>
